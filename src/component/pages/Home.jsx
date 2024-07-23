@@ -27,14 +27,16 @@ const Home = () => {
         </div>
       </section>
       <section className="flex flex-col justify-center items-center py-10">
-        <div className="flex flex-col items-center justify-between">
-          <h1 className="text-5xl font-sans font-bold">Our Services</h1>
-          <p className="font-xl text-slate-400 pb-10">
+        <div className="flex flex-col items-center justify-between mb-8">
+          <h1 className="sm:text-5xl text-4xl text-center font-sans font-bold pb-4">
+            Our Services
+          </h1>
+          <p className="sm:font-xl text-center text-lg text-slate-400 pb-10 md:justify-center">
             we Provide a wide range of healthcare services which meet all your
             needs
           </p>
         </div>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center gap-6">
           {Data.map((item) => (
             <Testimonial
               key={item.id}

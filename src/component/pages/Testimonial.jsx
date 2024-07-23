@@ -11,16 +11,16 @@ const Testimonial = ({
 }) => {
   return (
     <div
-      className="flex flex-col items-center p-4 bg-white shadow-md rounded-lg m-4"
+      className="flex flex-col items-center p-4 bg-white shadow-md rounded-lg m-4 sm:w-64 md:w-72 lg:w-80 xl:w-96"
       {...props}
     >
       <img
         src={image}
         alt={alt}
-        className="w-32 h-32 object-cover rounded-full mb-4"
+        className="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mb-4"
       />
-      <h3 className="text-xl font-semibold mb-2">{heading}</h3>
-      <p className="text-gray-600">{text}</p>
+      <h3 className="text-lg md:text-xl font-semibold mb-2">{heading}</h3>
+      <p className="text-sm sm:text-base text-gray-600 text-center">{text}</p>
       {buttonLabel && onButtonClick && (
         <button
           onClick={onButtonClick}
