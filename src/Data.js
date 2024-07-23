@@ -12,7 +12,7 @@ export default [
     },
   },
   {
-    id: "q1",
+    id: "q2",
     heading: "Emergemcy-care",
     text: "24/7 emergency service of critical heath situation",
     image: {
@@ -21,7 +21,7 @@ export default [
     },
   },
   {
-    id: "q1",
+    id: "q3",
     heading: "Specialist Consultatns",
     text: "Consultatns with top Specialist in verious filed of medicine",
     image: {

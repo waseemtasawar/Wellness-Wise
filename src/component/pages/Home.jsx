@@ -1,6 +1,7 @@
 import React from "react";
 import healthCare from "../../assets/healthcare.jpg";
 import Data from "../../Data.js";
+import Testimonial from "./Testimonial.jsx";
 const Home = () => {
   return (
     <>
@@ -25,28 +26,24 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center p-9">
+      <section className="flex flex-col justify-center items-center py-10">
         <div className="flex flex-col items-center justify-between">
-          <h1>Our Services</h1>
-          <p>
+          <h1 className="text-5xl font-sans font-bold">Our Services</h1>
+          <p className="font-xl text-slate-400 pb-10">
             we Provide a wide range of healthcare services which meet all your
             needs
           </p>
         </div>
-        <div>
-          <ul>
-            {Data.map((item) => (
-              <li key={item.id}>
-                <h1>{item.heading}</h1>
-                <p> {item.text} </p>
-                <img
-                  src={item.image.src}
-                  alt={item.image.alt}
-                  className="h-52 w-full object-cover"
-                />
-              </li>
-            ))}
-          </ul>
+        <div className="flex flex-wrap justify-center">
+          {Data.map((item) => (
+            <Testimonial
+              key={item.id}
+              image={item.image.src}
+              heading={item.heading}
+              alt={item.image.alt}
+              text={item.text}
+            />
+          ))}
         </div>
       </section>
     </>
