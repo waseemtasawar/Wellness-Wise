@@ -25,8 +25,8 @@ const Home = () => {
           />
         </div>
       </section>
-      <section>
-        <div>
+      <section className="flex flex-col justify-center items-center p-9">
+        <div className="flex flex-col items-center justify-between">
           <h1>Our Services</h1>
           <p>
             we Provide a wide range of healthcare services which meet all your
@@ -39,7 +39,11 @@ const Home = () => {
               <li key={item.id}>
                 <h1>{item.heading}</h1>
                 <p> {item.text} </p>
-                <img src={item.image.src} alt={item.image.alt} />
+                <img
+                  src={item.image.src}
+                  alt={item.image.alt}
+                  className="h-52 w-full object-cover"
+                />
               </li>
             ))}
           </ul>
