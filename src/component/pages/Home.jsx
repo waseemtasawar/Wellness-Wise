@@ -2,6 +2,7 @@ import React from "react";
 import healthCare from "../../assets/healthcare.jpg";
 import Data from "../../Data.js";
 import Testimonial from "./Testimonial.jsx";
+import AboutUs from "./AboutUs.jsx";
 const Home = () => {
   return (
     <>
@@ -48,6 +49,7 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <AboutUs />
     </>
   );
 };
